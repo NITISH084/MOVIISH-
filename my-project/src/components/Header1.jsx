@@ -19,7 +19,7 @@ const Header = () => {
         <div className="flex w-[100%] justify-around items-center z-30 p-10 relative ">
           <img
             className="md:w-[148px] md:h-[40px] w-[89px] h-[24px]"
-           src="../../public/logo.ico"
+           src="https://app.gemoo.com/share/image-annotation/667602796832636928?codeId=v6aaKGbxq9neJ&origin=imageurlgenerator"
             alt="netflix-logo"
           />
           <div className="flex justify-center items-center 450px:flex-row flex-col">
