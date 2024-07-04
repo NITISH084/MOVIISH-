@@ -27,7 +27,7 @@ const RecoSimilist = () => {
   useRecommendation();
   useSimilar();
   return (
-    <div className="bg-black overflow-hidden h-auto">
+    <div className="bg-black overflow-hidden h-fit min-h-[100vh]">
       <div className="flex  flex-col relative ">
         <div className="px-8 font-playfair">
           <p
