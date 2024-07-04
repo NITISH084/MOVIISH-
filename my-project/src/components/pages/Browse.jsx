@@ -60,7 +60,7 @@ const Browse = () => {
   return (
     <>
       <Header2 />
-      <div className="flex flex-col relative overflow-hidden scrollbar-hide scroll-smooth  
+      <div className="flex flex-col relative overflow-hidden no-scrollbar scroll-smooth  
       ">
         <Maincont ref={scrollToRef} />
         <Moviecont />

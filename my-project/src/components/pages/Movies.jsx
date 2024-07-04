@@ -33,7 +33,7 @@ const Movies = () => {
     return (
     <div>
         <Header2/>
-        <div className="flex flex-col relative overflow-hidden scrollbar-hide">
+        <div className="flex flex-col relative overflow-hidden no-scrollbar">
         <Maincont ref={scrollToRef}/>
         <Moviecont/>
         <Filterform/>

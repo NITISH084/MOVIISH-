@@ -147,7 +147,7 @@ const Filterform = () => {
         <div className="flex  md:gap-3 md:flex-row flex-col relative">
           <details
             className="text-white py-1 rounded-[5px] my-4 mx-2 border border-white bg-black  p-[7px] md:w-48 
-            line-clamp-4 overflow-y-scroll scrollbar-hide relative text-center"
+            line-clamp-4 overflow-y-scroll no-scrollbar relative text-center"
             onClick={() => {
               setExpand1(!expand1);
             }}
@@ -184,7 +184,7 @@ const Filterform = () => {
         </div>
         <div className="flex md:flex-row flex-col flex-wrap md:gap-3 relative">
           <details
-            className="text-white py-1 rounded-[5px] my-4 mx-2 bg-[#000000b5] border border-white  p-[7px] md:w-48 line-clamp-4 overflow-y-scroll scrollbar-hide"
+            className="text-white py-1 rounded-[5px] my-4 mx-2 bg-[#000000b5] border border-white  p-[7px] md:w-48 line-clamp-4 overflow-y-scroll no-scrollbar"
             onClick={() => {
               setExpand2(!expand2);
             }}

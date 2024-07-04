@@ -12,7 +12,7 @@ const Filteredresults = () => {
       {moviepage && moviesearch && (
         <>
           <p className="text-3xl text-white font-semibold py-3">Filtered Movies</p>
-          <div className="flex overflow-y-hidden scrollbar-hide overflow-x-scroll w-full gap-3">
+          <div className="flex overflow-y-hidden no-scollbar overflow-x-scroll w-full gap-3">
             <div className="flex items-center space-x-4">
               {moviesearch.map((movie) => (
                 <Card key={movie.id} data={movie} />
@@ -24,7 +24,7 @@ const Filteredresults = () => {
       {tvpage && tvsearch && (
         <>
           <p className="text-3xl text-white font-semibold py-3">Filtered TV series</p>
-          <div className="flex overflow-y-hidden scrollbar-hide overflow-x-scroll w-full gap-3">
+          <div className="flex overflow-y-hidden no-scrollbar overflow-x-scroll w-full gap-3">
             <div className="flex items-center space-x-4">
               {tvsearch.map((tv) => (
                 <Card key={tv.id} data={tv} />

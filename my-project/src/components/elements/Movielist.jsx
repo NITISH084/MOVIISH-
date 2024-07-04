@@ -13,7 +13,7 @@ const Movielist = ({ title, data }) => {
     <div className="px-8 font-playfair aos-item"  data-aos="fade-down">
       <p className="text-3xl text-white font-semibold
        py-3">{title} Movies</p>
-      <div className="flex overflow-x-auto overflow-hidden scrollbar-hide cursor-pointer " >
+      <div className="flex overflow-x-auto overflow-hidden no-scrollbar cursor-pointer " >
         <div className="flex items-center space-x-4  ">
           {data && data.map((info) => (
             <Card key={info.id} data={info} />

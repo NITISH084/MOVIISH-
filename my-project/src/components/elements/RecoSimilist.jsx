@@ -36,7 +36,7 @@ const RecoSimilist = () => {
           >
             Recommendations
           </p>
-          <div className="flex overflow-x-auto overflow-hidden scrollbar-hide cursor-pointer ">
+          <div className="flex overflow-x-auto overflow-hidden no-scrollbar cursor-pointer ">
             <div className="flex items-center  space-x-4  ">
               {data1 &&
                 data1.map((info1) => <Card key={info1.id} data={info1} />)}
@@ -50,7 +50,7 @@ const RecoSimilist = () => {
           >
             Similar
           </p>
-          <div className="flex overflow-x-auto overflow-hidden scrollbar-hide cursor-pointer ">
+          <div className="flex overflow-x-auto overflow-hidden no-scrollbar cursor-pointer ">
             <div className="flex items-center space-x-4  ">
               {data2 &&
                 data2.map((info2) => <Card key={info2.id} data={info2} />)}
