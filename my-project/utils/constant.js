@@ -1,4 +1,4 @@
-export const endpoint_api ="http://localhost:8000/api/v1/user";
+export const endpoint_api ="https://moviish-backend.onrender.com/api/v1/user";
  export const options = {
     method: 'GET',
     headers: {
