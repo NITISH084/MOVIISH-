@@ -1,4 +1,4 @@
-import scrollbarHide from 'tailwind-scrollbar-hide';
+
 
 
 export default {
@@ -27,7 +27,7 @@ export default {
     },
   },
   plugins: [
-    scrollbarHide(),
+  
   
   ],
 };
