@@ -2,11 +2,10 @@
 
 <p align="center">
   <a href="#technologies">Technologies</a> •
-  <a href="#getting-started">Getting Started</a> •
-  <a href="#contribute">Contribute</a>
+  <a href="#getting-started">Getting Started</a> 
 </p>
 
-<p align="center">Moviish is a dynamic web application inspired by the Netflix UI, leveraging TMDB API to provide users with detailed information about movies and TV shows. Create your own list, view trailers, ratings, details, credits, and more!</p>
+<p align="center">Moviish is a dynamic and feature-rich web application inspired by the Netflix UI. It leverages The Movie Database (TMDB) API to provide users with detailed information about movies and TV shows, including trailers, ratings, details, credits, and casts. Users can create personalized lists of their favorite content, with secure authorization via email and password. The application is designed to deliver an immersive and intuitive user experience. Stay updated with the latest in entertainment by exploring trending and recommended titles on Moviish!</p>
 
 <p align="center">
   <a href="https://moviish.onrender.com">📱 Visit Moviish</a>
