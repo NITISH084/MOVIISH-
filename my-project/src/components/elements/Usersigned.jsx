@@ -136,7 +136,7 @@ const Usersigned = () => {
       >
         <img
           className="md:w-[148px] md:h-[40px] w-[56px] "
-          src="../../public/logo.png"
+          src="../../.public/logo.ico"
           alt="netflix-logo"
         />
         <div className="flex items-center justify-center space-x-3 lg:space-x-4 lg:text-[18px] text-[12px]">
