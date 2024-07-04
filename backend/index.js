@@ -1,5 +1,4 @@
 import express from "express";
-import dotenv from "dotenv";
 import databaseconnection from "./utils/database.js";
 import cookieParser from "cookie-parser";
 import router from "./routes/userrouter.js";
@@ -8,9 +7,7 @@ import cors from "cors";
 
 
 databaseconnection();
-dotenv.config({
-    path: ".env"
-})
+
 
   
 
@@ -40,7 +37,7 @@ app.use(cors(corsOptions));
 
 app.use("/api/v1/user",router)
 
-const p=process.env.port;
+const p=process.env.port ||3000;
 app.listen(p,()=>{
     console.log(`http://localhost:${p}`);
 });
