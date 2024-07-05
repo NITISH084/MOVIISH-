@@ -10,7 +10,7 @@ const dataSlice = createSlice({
         tvPopular:null,
         tvTopRated:null,
         videourl:null,
-        mute:1,
+        mute:true,
     },
     reducers:{
         setmovieCurrently:(state,action)=>{

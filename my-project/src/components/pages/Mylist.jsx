@@ -24,8 +24,8 @@ const Mylist = () => {
   useDetails();
   useCredits();
   useSelectedCardVideo();
-  useSimilar();
   useRecommendation();
+  useSimilar();
   const getCardList = async (userId) => {
     try {
       const res = await axios.post(

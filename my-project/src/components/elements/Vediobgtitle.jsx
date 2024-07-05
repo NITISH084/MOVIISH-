@@ -35,7 +35,7 @@ const Vediobgtitle = ({ count }) => {
   const title = data[count].title || data[count].name;
 
   const handleClick = () => {
-    dispatch(setMute(mute === true||1 ? false : true)); // Toggle mute state
+    dispatch(setMute(!mute)); // Toggle mute state
     console.log("toggled");
   };
 
