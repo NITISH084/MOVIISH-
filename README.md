@@ -43,24 +43,30 @@ Clone the repository:
 ```bash
 git clone https://github.com/NITISH084/moviish.git
 cd moviish
-
+```
 <h3>Starting</h3>
+
 Install dependencies and start the development servers:
 # For the backend
+```bash
 cd backend
 npm install
 npm start
-
+```
 # For the frontend
+```bash
 cd ../my-project
 npm install
 npm start
+```
 
 Create a .env file in the backend directory with the following:
+```bash
 MONGO_URL=your_mongodb_url
 JWT_SECRET=your_jwt_secret
 TMDB_API_KEY=your_tmdb_api_key
-
+```
+```bash
 Visit http://localhost:3000 to use the application.
 ```
 
