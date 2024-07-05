@@ -46,7 +46,7 @@ const Player = () => {
         type="button"
         className="absolute bottom-0  m-1 px-8 py-0 hover:opacity-90 opacity-25 rounded-[5px] hover:text-red-950 text-blue-200 font-medium text-lg z-10 bg-slate-600 hover:bg-red-700"
         onClick={() => {
-          dispatch(setMute(!mute));
+  
           navigate("/browse/Content");
         }}
       >
