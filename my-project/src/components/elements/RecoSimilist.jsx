@@ -66,7 +66,6 @@ const RecoSimilist = () => {
               dispatch(setWatchMore(false));
               dispatch(setRecommendations(null));
               dispatch(setSimilar(null));
-              dispatch(setMute(!mute));
               navigate("/browse");
             }}
           >
