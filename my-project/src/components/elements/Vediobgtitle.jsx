@@ -53,7 +53,8 @@ const Vediobgtitle = ({ count }) => {
       <div className="flex items-center space-x-3">
         <button
           className="flex justify-center items-center bg-[#e50914] px-2 py-1 md:px-6 md:py-2 text-black rounded hover:bg-red-500"
-          onClick={() => {
+          onClick={(e) => {
+            e.stopPropagation()
             dispatch(setPlayButton(true));
             navigate("/browse/Player");
           }}
@@ -63,7 +64,8 @@ const Vediobgtitle = ({ count }) => {
         </button>
         <button
           className="flex justify-center items-center bg-gray-500 opacity-80  px-2 py-1 md:px-6 md:py-2 text-black rounded"
-          onClick={() => {
+          onClick={(e) => {
+            e.stopPropagation()
             dispatch(setWatchMore(true));
 
             navigate("/browse/recommendations");
