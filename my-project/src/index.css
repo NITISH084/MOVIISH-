@@ -31,7 +31,7 @@
   }
   
   ::-webkit-scrollbar-track {
-    background-color: #edf2f7; /* Tailwind gray-200 */
+    background-color: transparent; 
   }
   
   /* For Firefox */
@@ -55,6 +55,6 @@
   }
   
   *::-webkit-scrollbar-track {
-    background-color: #edf2f7; /* Tailwind gray-200 */
+    background-color:transparent; 
   }
   
