@@ -11,9 +11,11 @@ import { setMoviePage, setmoviesearch } from "../../Redux/movieSlice";
 import { useDispatch, useSelector } from "react-redux";
 import Filteredresults from "../elements/Filteredresults"
 import { setRecommendations, setSimilar, setWatchMore } from "../../Redux/browseSlice";
+import { useNavigate } from "react-router-dom";
 
 const Tvshows = () => {
   const dispatch= useDispatch();
+  const navigate = useNavigate();
   const userin = useSelector((state) => state.user.userData);
   const yeartv =useSelector((state)=>state.tv.year)
   const yearmovie =useSelector((state)=>state.movie.year)

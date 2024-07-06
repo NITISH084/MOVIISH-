@@ -4,9 +4,11 @@ import Details from "../elements/Details"
 import RecoSimilist from "../elements/RecoSimilist"
 import Header2 from "../Header2"
 import { useEffect } from "react"
+import { useNavigate } from "react-router-dom"
 
 const Content = () => {
   const userin = useSelector((state) => state.user.userData);
+  const navigate = useNavigate();
   
    //protected route
    useEffect(() => {

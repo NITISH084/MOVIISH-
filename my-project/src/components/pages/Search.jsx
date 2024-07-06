@@ -7,10 +7,12 @@ import { useDispatch, useSelector } from "react-redux"
 import { setSelected, setSelectedCard, setSelectedCardMedia, setSelectedCardURL } from "../../Redux/userSlice"
 import { setRecommendations, setSimilar, setWatchMore } from "../../Redux/browseSlice"
 import { setContext, setOverview, setPoster, setTitle } from "../../Redux/contextSlice"
+import { useNavigate } from "react-router-dom"
 
 
 const Search = () => {
   const userin = useSelector((state) => state.user.userData);
+  const navigate = useNavigate();
   const dispatch= useDispatch()
   useEffect(()=>{
 

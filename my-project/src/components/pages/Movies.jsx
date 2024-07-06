@@ -11,9 +11,11 @@ import Moviecont from "../elements/Moviecont"
 import Filterform from "../elements/Filterform"
 import Filteredresults from "../elements/Filteredresults"
 import { setRecommendations, setSimilar, setWatchMore } from "../../Redux/browseSlice"
+import { useNavigate } from "react-router-dom"
 
 const Movies = () => {
   const userin = useSelector((state) => state.user.userData);
+  const navigate = useNavigate();
   const dispatch= useDispatch();
   const scrollToRef = useRef(null);
   useEffect(()=>{
