@@ -92,15 +92,15 @@ export const Mycardrecieved = async (req, res) => {
   };
   
  export const deletecard = async (req,res)=>{
-    const {card_id} =req.body
-    if(!card_id){
+    const {user,card_id} =req.body
+    if(!card_id || !user){
       return res.status(404).json({
         msg:"could not get the card",
         success:false
       })
     }
     try {
-      const result = await UserList.deleteOne({card_id : card_id})
+      const result = await UserList.deleteOne({ user:user,card_id : card_id})
        if(result.deletedCount ===0){
         return res.status(400).json({
           msg:"Card could not be deleted",
