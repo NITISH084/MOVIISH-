@@ -14,7 +14,7 @@ export const Mycardsent = async (req, res) => {
     }
 
     // Check if the card already exists in the user's list
-    const existingCard = await UserList.findOne({ card_id });
+    const existingCard = await UserList.findOne({ user,card_id });
     if (existingCard) {
       return res.status(409).json({
         msg: "Card already exists in the favorite list.",
