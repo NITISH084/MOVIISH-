@@ -93,7 +93,7 @@ export const Mycardrecieved = async (req, res) => {
   
  export const deletecard = async (req,res)=>{
     const {user,card_id} =req.body
-    if(!card_id || !user){
+    if(!card_id ){
       return res.status(404).json({
         msg:"could not get the card",
         success:false
