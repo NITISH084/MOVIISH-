@@ -33,13 +33,13 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #000000b3;
+  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black */
 }
 
 /* For Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #2d3748 transparent; /* thumb color track color */
+  scrollbar-color: #2d3748 rgba(0, 0, 0, 0.7); /* thumb color track color */
 }
 
 *::-webkit-scrollbar {
@@ -57,5 +57,5 @@
 }
 
 *::-webkit-scrollbar-track {
-  background-color:  #000000b3;
+  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black */
 }
