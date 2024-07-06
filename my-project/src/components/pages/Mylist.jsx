@@ -16,7 +16,7 @@ import useSimilar from "../../hooks/useSimilar"
 import Header2 from "../Header2"
 import { MdDelete } from "react-icons/md";
 const Mylist = () => {
-  const user = useSelector((state) => state.user.userData._id);
+  const user = useSelector((state) => state.user.userData?._id);
   const data = useSelector((state) => state.userfunctionalities.mylist);
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -132,7 +132,7 @@ const Mylist = () => {
                       e.stopPropagation();
                       try {
                         const res= await axios.post(`${endpoint_api}/deletecard`,
-                            {card_id : d.card_id},
+                            {user:user,card_id : d.card_id},
                             {
                               headers: {
                                 "Content-Type": "application/json",
