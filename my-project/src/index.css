@@ -13,3 +13,48 @@
           scrollbar-width: none;  /* Firefox */
     }
   }
+
+
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #cbd5e0; /* Tailwind gray-400 */
+    border-radius: 0.25rem;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #a0aec0; /* Tailwind gray-500 */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #edf2f7; /* Tailwind gray-200 */
+  }
+  
+  /* For Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e0 #edf2f7; /* thumb color track color */
+  }
+  
+  *::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #cbd5e0; /* Tailwind gray-400 */
+    border-radius: 0.25rem;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #a0aec0; /* Tailwind gray-500 */
+  }
+  
+  *::-webkit-scrollbar-track {
+    background-color: #edf2f7; /* Tailwind gray-200 */
+  }
+  
