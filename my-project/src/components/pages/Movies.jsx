@@ -13,9 +13,16 @@ import Filteredresults from "../elements/Filteredresults"
 import { setRecommendations, setSimilar, setWatchMore } from "../../Redux/browseSlice"
 
 const Movies = () => {
+  const userin = useSelector((state) => state.user.userData);
   const dispatch= useDispatch();
   const scrollToRef = useRef(null);
   useEffect(()=>{
+
+    
+   //protected route
+    if (!userin) {
+      navigate("/");
+    }
     if (scrollToRef.current) {
       scrollToRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
     }

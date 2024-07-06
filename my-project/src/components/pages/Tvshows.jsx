@@ -14,9 +14,16 @@ import { setRecommendations, setSimilar, setWatchMore } from "../../Redux/browse
 
 const Tvshows = () => {
   const dispatch= useDispatch();
+  const userin = useSelector((state) => state.user.userData);
   const yeartv =useSelector((state)=>state.tv.year)
   const yearmovie =useSelector((state)=>state.movie.year)
   useEffect(()=>{
+
+    
+   //protected route
+    if (!userin) {
+      navigate("/");
+    }
     dispatch(setTvPage(true))
     dispatch(setMoviePage(false))
     dispatch(settvsearch(null)) 
@@ -24,7 +31,7 @@ const Tvshows = () => {
     dispatch(setRecommendations(null));
     dispatch(setSimilar(null));
     dispatch(setWatchMore(false));
-  },[dispatch])
+  },[dispatch,userin])
   useTrendingTV()
   useVideosbg()
   return (

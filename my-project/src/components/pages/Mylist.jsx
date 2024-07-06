@@ -16,10 +16,17 @@ import useSimilar from "../../hooks/useSimilar"
 import Header2 from "../Header2"
 import { MdDelete } from "react-icons/md";
 const Mylist = () => {
+  const userin = useSelector((state) => state.user.userData);
   const user = useSelector((state) => state.user.userData?._id);
   const data = useSelector((state) => state.userfunctionalities.mylist);
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  
+   //protected route
+   useEffect(() => {
+    if (!userin) {
+      navigate("/");
+    }},[userin])
 
   useDetails();
   useCredits();

@@ -12,6 +12,7 @@ import {
 } from "../../Redux/userSlice";
 
 const Player = () => {
+  const userin = useSelector((state) => state.user.userData);
   useSelectedCardVideo();
   const video = useSelector((state) => state.data?.videourl);
   const count = useSelector((state) => state.userfunctionalities?.count);
@@ -27,6 +28,12 @@ const Player = () => {
     console.log("Count:", count);
     console.log("Mute:", mute);
 
+    
+   //protected route
+    if (!userin) {
+      navigate("/");
+    }
+
     if (selectedcardurl && selected) {
       const newSrc = `https://www.youtube.com/embed/${selectedcardurl}?autoplay=1&mute=false&controls=1&rel=0&modestbranding=1&iv_load_policy=0&fs=0&disablekb=1&showinfo=0&loop=0`;
       setSrc(newSrc);
@@ -38,7 +45,7 @@ const Player = () => {
     } else {
       console.log("Video or video[count] is not defined");
     }
-  }, [count, video, mute, playbutton, selectedcardurl]);
+  }, [count, video, mute, playbutton, selectedcardurl,userin]);
 
   return (
     <div className="w-screen h-screen flex items-center justify-center bg-black  overflow-hidden">

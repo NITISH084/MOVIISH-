@@ -10,8 +10,15 @@ import { setContext, setOverview, setPoster, setTitle } from "../../Redux/contex
 
 
 const Search = () => {
+  const userin = useSelector((state) => state.user.userData);
   const dispatch= useDispatch()
   useEffect(()=>{
+
+    
+   //protected route
+    if (!userin) {
+      navigate("/");
+    }
     dispatch(setSelected(false))
     dispatch(setSelectedCard(null))
     dispatch(setSelectedCardURL(null))
@@ -23,7 +30,7 @@ const Search = () => {
     dispatch(setOverview(null))
     dispatch(setRecommendations(null))
     dispatch(setSimilar(null))
-  })
+  },[userin,dispatch])
   return (
     <div>
     <Header2/>
