@@ -1,4 +1,6 @@
+import { useSelector } from "react-redux";
 import RecoSimilist from "../elements/RecoSimilist"
+import { useEffect } from "react";
 
 const Popupwatch = () => {
   const userin = useSelector((state) => state.user.userData);
