@@ -11,6 +11,23 @@
   <a href="https://moviish.onrender.com">📱 Visit Moviish</a>
 </p>
 
+
+
+
+<h2 id="features">🌟 Features</h2>
+
+- **Netflix-inspired UI**: A visually appealing interface that resembles Netflix, providing a familiar user experience.
+- **Movie and TV Show Information**: Access comprehensive details about movies and TV shows, including trailers, ratings, overviews, and more.
+- **Credits and Casts**: View detailed information about the cast and crew of each movie and TV show.
+- **Personalized Lists**: Users can create and manage their own lists of favorite movies and TV shows.
+- **Authorization**: Secure sign-up and login using email and password.
+- **Browse and Search Movies/TV Shows**: Explore a vast collection of movies and TV shows with detailed information.
+- **Trailers and Ratings**: Watch trailers and check ratings for movies and TV shows.
+- **Detailed Information**: Get detailed information including credits and casts.
+- **User Authentication**: Secure login and registration using email and password.
+- **Search Filters**: Filter search results based on various criteria such as movie origin, popularity, and revenue.
+- **Responsive Design**: Fully responsive UI compatible with various devices.
+
 <h2 id="technologies">💻 Technologies</h2>
 
 - React
@@ -25,6 +42,9 @@
 - JSON Web Token (JWT)
 - Bcryptjs
 - TMDB API
+
+
+
 
 <h2 id="getting-started">🚀 Getting started</h2>
 
