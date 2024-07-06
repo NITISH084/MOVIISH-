@@ -33,7 +33,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: transparent;
+  background-color: #000000b3;
 }
 
 /* For Firefox */
@@ -57,5 +57,5 @@
 }
 
 *::-webkit-scrollbar-track {
-  background-color: transparent;
+  background-color:  #000000b3;
 }
