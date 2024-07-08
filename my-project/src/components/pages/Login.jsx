@@ -4,7 +4,7 @@ import Netflix_bg1 from "../elements/Netflix_bg1";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 const Login = () => {
-  const userData = useSelector(state.user.userData)
+  const userData = useSelector((state)=>state.user.userData)
   const navigate =useNavigate()
   useEffect(()=>{
     if(userData){
