@@ -11,15 +11,17 @@ export default {
       },
       animation: {
         'spin-slow': 'spin 3s linear infinite',
-        bounce: 'bounce 1s infinite',
+        bounce1: 'bounceSequence 1.2s infinite',
+        bounce2: 'bounceSequence 1.2s infinite 0.2s',
+        bounce3: 'bounceSequence 1.2s infinite 0.4s',
       },
       screens: {
         '450px': '450px',
       },
       keyframes: {
-        bounce: {
-          '0%, 100%': { transform: 'translateY(-25%)' },
-          '50%': { transform: 'translateY(0)' },
+        bounceSequence: {
+          '0%, 80%, 100%': { transform: 'translateY(0)' },
+          '40%': { transform: 'translateY(-30px)' },
         },
       },
       backgroundImage: {
