@@ -1,6 +1,3 @@
-
-
-
 export default {
   content: [
     "./index.html",
@@ -14,9 +11,16 @@ export default {
       },
       animation: {
         'spin-slow': 'spin 3s linear infinite',
+        bounce: 'bounce 1s infinite',
       },
       screens: {
         '450px': '450px',
+      },
+      keyframes: {
+        bounce: {
+          '0%, 100%': { transform: 'translateY(-25%)' },
+          '50%': { transform: 'translateY(0)' },
+        },
       },
       backgroundImage: {
         'custom-gradient1': 'linear-gradient(to bottom, rgba(0, 0, 0, 3.8) 0%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 3.8) 100%)',

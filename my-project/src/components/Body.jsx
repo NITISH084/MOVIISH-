@@ -1,16 +1,17 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Login from "./pages/Login";
-import Browse from "./pages/Browse";
-import Login2 from "./pages/Login2";
-import Tvshows from "./pages/Tvshows";
-import Movies from "./pages/Movies";
-import Search from "./pages/Search";
-import Popupwatch from "./pages/Popupwatch";
-import Player from "./pages/Player";
-import Mylist from "./pages/Mylist";
-import Content from "./pages/Content";
+import Loader from "./elements/Loading";
 
+const Login = lazy(() => import("./pages/Login"));
+const Browse = lazy(() => import("./pages/Browse"));
+const Login2 = lazy(() => import("./pages/Login2"));
+const Tvshows = lazy(() => import("./pages/Tvshows"));
+const Movies = lazy(() => import("./pages/Movies"));
+const Search = lazy(() => import("./pages/Search"));
+const Popupwatch = lazy(() => import("./pages/Popupwatch"));
+const Player = lazy(() => import("./pages/Player"));
+const Mylist = lazy(() => import("./pages/Mylist"));
+const Content = lazy(() => import("./pages/Content"));
 
 const Body = () => {
   const appRouter = createBrowserRouter([
@@ -51,16 +52,15 @@ const Body = () => {
       element: <Mylist />,
     },
     {
-      path:"/browse/Content",
-      element:<Content/>,
-    }
+      path: "/browse/Content",
+      element: <Content />,
+    },
   ]);
 
   return (
-    <div>
-      <RouterProvider router={appRouter}>
-      </RouterProvider>
-    </div>
+    <Suspense fallback={<Loader/>}>
+      <RouterProvider router={appRouter} />
+    </Suspense>
   );
 };
 
