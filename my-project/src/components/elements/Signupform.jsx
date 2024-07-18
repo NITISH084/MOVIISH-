@@ -29,11 +29,11 @@ const Signupform = () => {
         }
       );
       if (res.data.success) {
-        toast.success(res.data.msg);
+        toast.success(res?.data.msg);
         dispatch(setIsLogin(true));
       }
     } catch (error) {
-      toast.error(error.response.data.msg);
+      toast.error(error.response?.data.msg);
       console.log(error);
     } finally {
       dispatch(setLoading(false));
