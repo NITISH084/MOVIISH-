@@ -31,13 +31,13 @@ const Signinform = () => {
         }
       );
       if (res.data.success) {
-        toast.success(res.data.msg);
+        toast.success(res?.data.msg);
         // Dispatch action to update mylist in Redux store
-        dispatch(setMylist(res.data.userCards));
+        dispatch(setMylist(res.data?.userCards));
       }
     } catch (error) {
       if (error.response) {
-        toast.error(error.response.data.msg);
+        toast.error(error.response?.data.msg);
       } else {
         toast.error("Error in fetching card");
       }
