@@ -26,11 +26,13 @@ const corsOptions = {
             callback(new Error('Not allowed by CORS'));
         }
     },
-    credentials: true
+    credentials: true,
+    preflightContinue: false,
+    optionsSuccessStatus: 204
 }
 
 app.use(cors(corsOptions));
-
+app.options('*', cors(corsOptions)); // Enable pre-flight across-the-board
 
 app.use("/api/v1/user",router)
 
