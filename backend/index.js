@@ -16,7 +16,8 @@ app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 app.use(cookieParser());
 const allowedOrigins = [
-    'https://moviish.onrender.com'
+    'https://moviish.onrender.com',
+  'https://moviish-nitish084s-projects.vercel.app/'
    
 ];
 
