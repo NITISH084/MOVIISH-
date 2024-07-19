@@ -1,4 +1,4 @@
-export const endpoint_api ="https://moviish.vercel.app/";
+export const endpoint_api ="https://moviish.vercel.app";
  export const options = {
     method: 'GET',
     headers: {
