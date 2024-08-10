@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 app.use(cookieParser());
 
-const allowedOrigins = ['https://moviish.onrender.com','https://moviish-gk6k.onrender.com'];
+const allowedOrigins = ['https://moviish-gk6k.onrender.com'];
 
 const corsOptions = {
     origin: function (origin, callback) {
