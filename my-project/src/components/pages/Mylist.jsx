@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { setMylist, setWatchMore } from "../../Redux/browseSlice";
 import { useDispatch, useSelector } from "react-redux";
+import { FaShareAlt } from "react-icons/fa";
 import toast from "react-hot-toast";
 import axios from "axios";
 import { endpoint_api } from "../../../utils/constant";
@@ -161,12 +162,18 @@ const Mylist = () => {
               </div>
             ))}
           </div>
+          <div className="flex justify-center gap-x-5 m-4">
+
           <button type="button" className="bg-slate-600 px-4 py-1 rounded-[5px] text-lg hover:text-red-500 hover:bg-slate-800 w-28 justify-items-center self-center  hover:scale-110"
           onClick={()=>{
             navigate("/browse")
           }}>
             Back
           </button>
+          <button type="button" className="bg-slate-600 px-4 py-1 rounded-[5px] text-lg hover:text-green-600 hover:bg-slate-800 w-28 justify-items-center self-center  hover:scale-110 flex justify-center items-center gap-x-2" onClick={()=>{alert('feature coming soon..')}}>
+            Share <FaShareAlt />
+          </button>
+            </div>
         </div>
       </div>
     </div>

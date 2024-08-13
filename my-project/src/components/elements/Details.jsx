@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
 import { FaPlus, FaPlay, FaCheck } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 import { IoChevronBackCircleSharp } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import useCredits from "../../hooks/useCredits";
@@ -10,6 +11,8 @@ import { useEffect, useRef } from "react";
 import toast from "react-hot-toast";
 import { endpoint_api } from "../../../utils/constant";
 import axios from "axios";
+import { Badge } from "@mui/material";
+import Ratings from "./Ratings";
 
 const Details = () => {
   useCredits();
@@ -66,7 +69,6 @@ const Details = () => {
     }
     navigate("/browse/Mylist");
   };
-
   return (
     <div
       className="flex bg-no-repeat relative bg-cover bg-center md:flex-row flex-col"
@@ -100,7 +102,7 @@ const Details = () => {
                 <div className="md:text-xl font-nunito font-medium md:font-bold text-white">
                   {details.tagline}
                 </div>
-                <div className="flex md:flex-row flex-col md:space-x-4 md:space-y-0 space-y-2 md:w-auto w-48">
+                <div className="flex md:flex-row flex-col md:space-x-4 md:space-y-0 space-y-2 md:w-auto w-48  md:items-center ">
                   <button
                     type="button"
                     className="bg-pink-300 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-[0_0_15px_5px_rgba(219,39,119,0.6)] md:px-4 rounded-lg text-[18px] md:py-2 py-1 flex justify-center items-center gap-3"
@@ -121,6 +123,7 @@ const Details = () => {
                     {text1}
                   </button>
                 </div>
+                <Ratings/>
                 <div className="text-white md:text-2xl font-nunito md:line-clamp-5 line-clamp-3 font-medium">
                   <p>
                     {typeof overview === "string"
