@@ -1,6 +1,5 @@
 import { useSelector } from "react-redux";
 import { FaPlus, FaPlay, FaCheck } from "react-icons/fa";
-import { FaStar } from "react-icons/fa";
 import { IoChevronBackCircleSharp } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import useCredits from "../../hooks/useCredits";
@@ -11,7 +10,6 @@ import { useEffect, useRef } from "react";
 import toast from "react-hot-toast";
 import { endpoint_api } from "../../../utils/constant";
 import axios from "axios";
-import { Badge } from "@mui/material";
 import Ratings from "./Ratings";
 
 const Details = () => {
