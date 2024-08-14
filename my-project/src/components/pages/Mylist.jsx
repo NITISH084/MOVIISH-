@@ -16,6 +16,7 @@ import useRecommendation from "../../hooks/useRecommendation"
 import useSimilar from "../../hooks/useSimilar"
 import Header2 from "../Header2"
 import { MdDelete } from "react-icons/md";
+import Shareopt from "../elements/Shareopt";
 const Mylist = () => {
   const userin = useSelector((state) => state.user.userData);
   const user = useSelector((state) => state.user.userData?._id);
@@ -162,6 +163,7 @@ const Mylist = () => {
               </div>
             ))}
           </div>
+            <Shareopt/>
           <div className="flex justify-center gap-x-5 m-4">
 
           <button type="button" className="bg-slate-600 px-4 py-1 rounded-[5px] text-lg hover:text-red-500 hover:bg-slate-800 w-28 justify-items-center self-center  hover:scale-110"
@@ -170,9 +172,7 @@ const Mylist = () => {
           }}>
             Back
           </button>
-          <button type="button" className="bg-slate-600 px-4 py-1 rounded-[5px] text-lg hover:text-green-600 hover:bg-slate-800 w-28 justify-items-center self-center  hover:scale-110 flex justify-center items-center gap-x-2" onClick={()=>{alert('feature coming soon..')}}>
-            Share <FaShareAlt />
-          </button>
+          
             </div>
         </div>
       </div>
