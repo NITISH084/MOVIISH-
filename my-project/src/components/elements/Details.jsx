@@ -122,7 +122,7 @@ const Details = () => {
                   </button>
                 </div>
                 <Ratings/>
-                <div className="text-white md:text-2xl font-nunito md:line-clamp-5 line-clamp-3 font-medium">
+                <div className="text-white md:text-2xl font-nunito md:line-clamp-4 line-clamp-3 font-medium">
                   <p>
                     {typeof overview === "string"
                       ? overview
